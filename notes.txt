@@ -3,3 +3,14 @@ http://goo.gl/PHKgO7
 https://goo.gl/UHjaeP
 
 https://forum.golangbridge.org
+
+What did I learn in the control flow section:
+    case switching
+    if statements
+    for statements
+    ascii is just a subset of utf8... kinda 
+    utf8 is HUGE
+    logic / conditionals 
+    breaking/continue in loops
+    loops are iterations
+    runes are "string literals" <-- need to review this more
