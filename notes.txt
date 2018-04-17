@@ -19,3 +19,5 @@ What did I learn in the control flow section:
 
 callbacks are passing a func as an argument
 closure is ... returning a func? 
+
+defer waits until just before enclosing scope/func exits...
