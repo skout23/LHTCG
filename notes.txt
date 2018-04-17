@@ -14,3 +14,8 @@ What did I learn in the control flow section:
     breaking/continue in loops
     loops are iterations
     runes are "string literals" <-- need to review this more
+
+
+
+callbacks are passing a func as an argument
+closure is ... returning a func? 
