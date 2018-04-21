@@ -9,24 +9,26 @@ Find the sum of the digits in the number 100!
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/big"
+	"strconv"
+)
 
-func factorial(x int) int {
-
-	if x == 1 {
-		return 1
+func sliceSum(n big.Int) {
+	s := strconv.Itoa(n)
+	var count int
+	for _, v := range s {
+		fmt.Printf("char :%c\n", v)
+		// fmt.Println(int(v - '0'))
+		count += (int(v - '0'))
+		fmt.Println(count)
 	}
-	// fmt.Println("checking: ", x)
-	return x * factorial(x-1)
 }
 
-//func sliceSum(n int) int {
-//
-//}
-
 func main() {
-	x := factorial(100)
-	fmt.Println("factorial: ", x)
-	// sum := sliceSum(x)
-
+	x := new(big.Int)
+	x.MulRange(1, 100)
+	fmt.Println(x)
+	sliceSum(x)
 }
