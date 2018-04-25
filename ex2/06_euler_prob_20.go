@@ -13,21 +13,13 @@ package main
 
 import "fmt"
 
-func fibonacci(count int32) {
-	var index int32
-	for index = 0; index <= count; index++ {
-		fib := (index - 1) + (index - 2)
-		if fib < 0 {
-			fib = 0
-		}
-		if fib >= 4000000 {
-			fmt.Println("Max index:", index)
-			break
-		}
-		fmt.Print(fib, ",")
+func fibonacci(n int) int {
+	if n <= 1 {
+		return n
 	}
+	return fibonacci(n-1) + fibonacci(n-2)
 }
 
 func main() {
-	fibonacci(1000000)
+	fmt.Println(fibonacci(10))
 }
