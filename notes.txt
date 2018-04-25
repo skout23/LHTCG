@@ -21,3 +21,5 @@ callbacks are passing a func as an argument
 closure is ... returning a func? 
 
 defer waits until just before enclosing scope/func exits...
+
+Still need to review callbacks, and map
